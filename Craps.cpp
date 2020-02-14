@@ -5,30 +5,30 @@
 #include "Craps.h"
 #include <random>
 
-Die(int startingNumberofSides, int startingIncrement,
+Die::Die(int startingNumberofSides, int startingIncrement,
     int startingStartingValue, std::string startingColor, bool isSymbols=false, std::string material = "Bone");
-int roll(){
+int Die::roll(){
 
 }
-void setNumSides (int newNewSides){
+void Die::setNumSides (int newNewSides){
 
 }
-int getNumSides (){
+int Die::getNumSides (){
 
 }
-void setIncrement (int newIncrement){
+void Die::setIncrement (int newIncrement){
 
 }
-int getIncrement (){
+int Die::getIncrement (){
 
 }
-void setColor (std::string newNewColor){
+void Die::setColor (std::string newNewColor){
 
 }
-std::string getColor (){
+std::string Die:: getColor (){
 
 }
-void setIsSymbol (bool newIsSymbol){
+void Die::setIsSymbol (bool newIsSymbol){
 
 }
 bool isSymbol (){
