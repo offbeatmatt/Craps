@@ -3,4 +3,4 @@ project(Craps)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Craps main.cpp)
+add_executable(Craps main.cpp Craps.cpp Craps.h)
