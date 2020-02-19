@@ -4,4 +4,4 @@ project(Craps)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-fprofile-arcs -ftest-coverage")
 
-add_executable(Craps main.cpp Craps.cpp Craps.h)
+add_executable(Craps main.cpp Die.cpp Die.h)

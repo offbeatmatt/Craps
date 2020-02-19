@@ -2,7 +2,7 @@
 // Created by 16038 on 2/14/2020.
 //
 
-#include "Craps.h"
+#include "Die.h"
 #include <random>
 
 Die::Die(int startingNumberofSides, int startingIncrement,

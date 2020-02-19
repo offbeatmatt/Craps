@@ -2,8 +2,8 @@
 // Created by 16038 on 2/14/2020.
 //
 
-#ifndef CRAPS_CRAPS_H
-#define CRAPS_CRAPS_H
+#ifndef CRAPS_DIE_H
+#define CRAPS_DIE_H
 
 #include <string>
 
@@ -31,4 +31,4 @@ public: //Put setters & getters, roll
     void setMaterial (std::string newMaterial);
     std::string getMaterial();
 };
-#endif //CRAPS_CRAPS_H
+#endif //CRAPS_DIE_H
