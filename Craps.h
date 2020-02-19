@@ -13,9 +13,9 @@ private:
     int increment;
     int currentValue;
     std::string color;
-    bool isSymbols;
     std::string material;
     int initialValue;
+    bool isSymbols;
 public: //Put setters & getters, roll
     Die(int startingNumberofSides, int startingIncrement,
             int startingStartingValue, std::string startingColor, bool isSymbols=false, std::string material = "Bone");
