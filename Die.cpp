@@ -6,7 +6,7 @@
 #include <random>
 
 Die::Die(int startingNumberofSides, int startingIncrement,
-    int startingStartingValue, std::string startingColor, bool isSymbols= false, std::string material = "Bone");
+    int startingStartingValue, std::string startingColor, bool isSymbols, std::string material);
 int Die::roll(){ //Generate random number between increment and number of sides multiply  by increment (count by 10s, etc)
 
 }
