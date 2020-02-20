@@ -7,7 +7,7 @@
 
 Die::Die(int startingNumberofSides, int startingIncrement,
     int startingStartingValue, std::string startingColor, bool isSymbols= false, std::string material = "Bone");
-int Die::roll(){
+int Die::roll(){ //Generate random number between increment and number of sides multiply  by increment (count by 10s, etc)
 
 }
 void Die::setNumSides (int newNewSides){
@@ -31,12 +31,12 @@ std::string Die:: getColor (){
 void Die::setIsSymbol (bool newIsSymbol){
     isSymbols = newIsSymbol;
 }
-bool getIsSymbol (){
+bool Die::getIsSymbol (){
     return isSymbols;
 }
-void setMaterial (std::string newMaterial){
+void Die::setMaterial (std::string newMaterial){
     material = newMaterial;
 }
-std::string getMaterial(){
+std::string Die::getMaterial(){
     return material;
 }

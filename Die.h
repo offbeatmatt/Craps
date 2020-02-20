@@ -8,7 +8,7 @@
 #include <string>
 
 class Die {
-private:
+protected:
     int numSides;
     int increment;
     int currentValue;
@@ -27,7 +27,7 @@ public: //Put setters & getters, roll
     void setColor (std::string newNewColor);
     std::string getColor ();
     void setIsSymbol (bool newIsSymbol);
-    bool isSymbol ();
+    bool getIsSymbol ();
     void setMaterial (std::string newMaterial);
     std::string getMaterial();
 };
