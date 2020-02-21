@@ -14,13 +14,14 @@ protected:
     int currentValue;
     std::string color;
     std::string material;
-    int initialValue;
+    int lowestNumOnDie;
     bool isSymbols;
+
 public: //Put setters & getters, roll
     Die(int startingNumberofSides, int startingIncrement,
-            int startingStartingValue, std::string startingColor, bool isSymbols=false, std::string material = "Bone");
+        int startingLowestNum, std::string startingColor,bool startingIsSymbols, std::string startingMaterial );
     int roll();
-    void setNumSides (int newNewSides);
+    void setNumSides (int newNumSides);
     int getNumSides ();
     void setIncrement (int newIncrement);
     int getIncrement ();
@@ -30,5 +31,9 @@ public: //Put setters & getters, roll
     bool getIsSymbol ();
     void setMaterial (std::string newMaterial);
     std::string getMaterial();
+    void setLowestNumOnDie(int newLowestNum);
+    int getLowestNumOnDie();
+    void setCurrentValue(int newCurrentValue);
+    int getCurrentValue();
 };
 #endif //CRAPS_DIE_H

@@ -4,14 +4,23 @@
 
 #include "Die.h"
 #include <random>
+#include <string>
 
 Die::Die(int startingNumberofSides, int startingIncrement,
-    int startingStartingValue, std::string startingColor, bool isSymbols, std::string material);
-int Die::roll(){ //Generate random number between increment and number of sides multiply  by increment (count by 10s, etc)
-
+         int startingLowestNum, std::string startingColor, bool startingIsSymbols, std::string startingMaterial){
+    numSides = startingNumberofSides;
+    increment = startingIncrement;
+    lowestNumOnDie = startingLowestNum;
+    color = startingColor;
+    material = startingMaterial;
+    isSymbols = startingIsSymbols;
 }
-void Die::setNumSides (int newNewSides){
- numSides = newNewSides;
+
+int Die::roll(){ //Generate random number between increment and number of sides multiply  by increment (count by 10s, etc)
+    return (rand() % numSides + (lowestNumOnDie/increment)) * increment;
+}
+void Die::setNumSides (int newNumSides){
+ numSides = newNumSides;
 }
 int Die::getNumSides (){
     return numSides;
@@ -39,4 +48,16 @@ void Die::setMaterial (std::string newMaterial){
 }
 std::string Die::getMaterial(){
     return material;
+}
+void Die::setLowestNumOnDie(int newLowestNum){
+    lowestNumOnDie = newLowestNum;
+}
+int Die::getLowestNumOnDie(){
+    return lowestNumOnDie;
+}
+void Die::setCurrentValue(int newCurrentValue){
+    currentValue = newCurrentValue;
+}
+int Die::getCurrentValue(){
+    return currentValue;
 }
