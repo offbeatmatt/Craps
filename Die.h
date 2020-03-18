@@ -7,6 +7,10 @@
 
 #include <string>
 
+void playGame();
+void playFirstRoll(int rollValue);
+void playSecondRoll(int rollValue);
+
 class Die {
 protected:
     int numSides;
